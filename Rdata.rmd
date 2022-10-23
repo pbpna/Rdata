@@ -1,2 +1,8 @@
-c <- c(4,3,3,3,3,7)
-c
+```{r}
+nz <- read.csv("D:\\SDSU\\Fall 2022\\Time Seris Analysis\\Chapter 1\\pounds_nz.dat")
+#x.ma <- arima(x, ordr = c(0,0,5))
+nz.ts <- ts(nz, start = 1991, fr = 4)
+nz.ma <- arima(nz.ts, order = c(0,0,6))
+nz.ma
+
+```
