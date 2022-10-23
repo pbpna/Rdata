@@ -6,3 +6,8 @@ nz.ma <- arima(nz.ts, order = c(0,0,6))
 nz.ma
 
 ```
+#ARIMA Function:
+```{r}
+x.ma <- arima(x=x, order = c(0,0,3))
+x.ma
+
